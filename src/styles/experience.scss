@@ -1,0 +1,217 @@
+@import "colors.scss";
+@media (min-width: 900px) {
+  .title {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      margin: 10px;
+      letter-spacing: 2px;
+    }
+  }
+
+  .publications {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    > .publication-carousel {
+      display: flex;
+      align-items: stretch;
+      justify-content: space-around;
+
+      > .publication-1 {
+        box-shadow: 2px 2px 2px 2px rgb(155, 152, 152);
+        width: 45%;
+        padding: 30px;
+
+        > div {
+          color: white;
+          background-color: $third;
+          font-style: bold;
+          margin: 25px -45px 35px -45px;
+
+          a {
+            color: white;
+          }
+        }
+      }
+
+      > .publication-2 {
+        box-shadow: 2px 2px 2px 2px rgb(155, 152, 152);
+        width: 45%;
+        padding: 30px;
+
+        > div {
+          color: white;
+          background-color: $third;
+          font-style: bold;
+          margin: 27px -45px -40px -45px;
+
+          a {
+            color: white;
+            padding: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  .research-carousel {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    margin: 10px;
+
+    .research-1 {
+      width: 30%;
+      box-shadow: 2px 2px 2px 2px rgb(155, 152, 152);
+      padding: 10px;
+    }
+    .research-2 {
+      width: 30%;
+
+      box-shadow: 2px 2px 2px 2px rgb(155, 152, 152);
+      padding: 10px;
+    }
+    .research-3 {
+      width: 30%;
+
+      box-shadow: 2px 2px 2px 2px rgb(155, 152, 152);
+      padding: 10px;
+    }
+  }
+
+  .professional-carousel {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    margin: 10px;
+
+    .professional-1 {
+      width: 45%;
+      box-shadow: 2px 2px 2px 2px rgb(155, 152, 152);
+      padding: 10px;
+    }
+
+    .professional-2 {
+      width: 45%;
+      box-shadow: 2px 2px 2px 2px rgb(155, 152, 152);
+      padding: 10px;
+    }
+  }
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .title {
+    display: flex;
+    // margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      margin: 10px;
+      letter-spacing: 2px;
+    }
+  }
+
+  .publications {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    > .publication-carousel {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+
+      > .publication-1 {
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 20px;
+        margin: 10px;
+        box-shadow: 0px 5px 10px rgba(20, 13, 78, 0.548);
+
+        > div {
+          background-color: $third;
+          padding: 10px;
+          border-radius: 15px;
+          > a {
+            transition: transform 0.3s ease-in-out;
+            color: white;
+            &:hover {
+              transform: scale(1.5);
+            }
+          }
+        }
+      }
+
+      > .publication-2 {
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 20px;
+        margin: 10px;
+        box-shadow: 0px 5px 10px rgba(20, 13, 78, 0.548);
+
+        > div {
+          background-color: $third;
+          padding: 10px;
+          border-radius: 15px;
+          margin-top: 10px;
+          > a {
+            transition: transform 0.3s ease-in-out;
+            color: white;
+            &:hover {
+              transform: scale(1.5);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .research {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    > .research-carousel {
+      > .research-1 {
+        box-shadow: 2px 2px 2px 2px rgba(20, 13, 78, 0.548);
+        padding: 10px;
+        margin: 10px;
+      }
+      > .research-2 {
+        box-shadow: 2px 2px 2px 2px rgba(20, 13, 78, 0.548);
+        padding: 10px;
+        margin: 10px;
+      }
+      > .research-3 {
+        box-shadow: 2px 2px 2px 2px rgba(20, 13, 78, 0.548);
+        padding: 10px;
+        margin: 10px;
+      }
+    }
+  }
+  .professional {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    > .professional-carousel {
+      > .professional-1 {
+        box-shadow: 2px 2px 2px 2px rgba(20, 13, 78, 0.548);
+        padding: 10px;
+        margin: 10px 10px 100px 10px;
+      }
+      > .professional-2 {
+        box-shadow: 2px 2px 2px 2px rgba(20, 13, 78, 0.548);
+        padding: 10px;
+        margin: 10px;
+      }
+    }
+  }
+}

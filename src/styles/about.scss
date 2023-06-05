@@ -1,0 +1,172 @@
+@import "colors.scss";
+
+@media (min-width: 900px) {
+  container {
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    color: $third;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondary;
+    border-radius: 30px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.9);
+
+    > .img {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      margin: 30px;
+      display: flex;
+      justify-content: center;
+
+      > img {
+        margin-top: -20px;
+
+        width: 90%;
+        background-color: white;
+        border-radius: 30px;
+        height: 90vh;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.9);
+      }
+      > .social-media {
+        display: flex;
+        color: white;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        > p {
+          padding: 8px;
+          margin: -20px;
+          border-radius: 15px;
+          border: 2px white solid;
+          background-color: $third;
+          font-size: 20px;
+        }
+
+        > .links {
+          display: flex;
+          font-size: 40px;
+          margin-top: 10px;
+
+          > a {
+            color: white;
+            margin: 15px;
+          }
+        }
+      }
+    }
+
+    > .aboutme {
+      width: 65%;
+      height: auto;
+      padding: 10px;
+
+      > h3 {
+        color: rgb(230, 221, 221);
+        letter-spacing: 5px;
+      }
+
+      > h1 {
+        color: white;
+        letter-spacing: 2px;
+      }
+
+      > p {
+        padding-right: 80px;
+        word-spacing: 2px;
+      }
+      > .info {
+        display: flex;
+        flex-direction: column;
+
+        > p > span {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  container {
+    margin-top: 10px;
+    width: 100%;
+    height: 100vh;
+    padding: 30px;
+    color: $third;
+    display: flex;
+    align-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    background-color: $secondary;
+    border-radius: 30px;
+    overflow: auto;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.9);
+
+    > .img {
+      > .social-media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $secondary;
+        padding: 15px;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 0px 5px 10px rgba(63, 63, 63, 0.9);
+        margin-bottom: 20px;
+
+        > p {
+          display: none;
+        }
+
+        > .links {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          justify-content: center;
+
+          > a {
+            font-size: 40px;
+            margin: 5px;
+          }
+        }
+      }
+      > img {
+        display: none;
+      }
+    }
+
+    > .aboutme {
+      display: flex;
+      flex-direction: column;
+      color: white;
+
+      > h3 {
+        margin: 5px 0px;
+      }
+      > h1 {
+        margin: 5px 0px;
+      }
+      > h4 {
+        margin: 5px 0px;
+      }
+      > p {
+        margin: 5px 0px;
+      }
+      > .info {
+        margin-top: 30px;
+        padding: 10px;
+        border: 2px solid white;
+        border-radius: 20px;
+        box-shadow: 0px 5px 10px rgba(160, 159, 159, 0.9);
+
+        > p > span {
+          color: white;
+        }
+      }
+    }
+  }
+}

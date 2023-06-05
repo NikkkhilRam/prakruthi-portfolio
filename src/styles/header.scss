@@ -1,0 +1,78 @@
+@import "colors.scss";
+
+@media (min-width: 600px) {
+  nav {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+
+    > h1 {
+      width: 60%;
+      color: #304a49;
+      margin: 0%;
+      font-family: $text1;
+    }
+
+    > a {
+      box-shadow: -10px 0px 10px -5px rgba(0, 0, 0, 0.29),
+        0px -10px 10px -5px rgba(0, 0, 0, 0.297),
+        0px 10px 10px -5px rgba(0, 0, 0, 0.345),
+        10px 0px 10px 5px rgba(0, 0, 0, 0.261);
+
+      padding: 7px 10px;
+      font-size: 15px;
+      font-family: $text1;
+      border-radius: 25px;
+      border-style: none;
+      background-color: $third;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  nav {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: $primary;
+    position: sticky;
+
+    > h1 {
+      width: 100%;
+      text-align: center;
+      color: #304a49;
+      margin: 0%;
+      font-family: $text1;
+    }
+
+    > a {
+      box-shadow: -10px 0px 10px -5px rgba(0, 0, 0, 0.297),
+        0px -10px 10px -5px rgba(5, 5, 5, 0.246),
+        0px 10px 10px -5px rgba(0, 0, 0, 0.261);
+      width: 100px;
+      text-align: center;
+      padding: 7px 10px;
+      margin-top: 20px;
+      font-size: 15px;
+      font-family: $text1;
+      border-radius: 25px;
+      border-style: none;
+      background-color: $third;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

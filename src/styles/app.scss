@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Open+Sans&display=swap");
+@media (min-width: 900px) {
+  * {
+    padding: 0%;
+    font-family: "Jost", sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+  }
+  body {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+
+@media (max-width: 900px) {
+  * {
+    padding: 0%;
+    font-family: "Jost", sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+}

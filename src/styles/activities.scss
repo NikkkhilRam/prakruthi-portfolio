@@ -1,0 +1,120 @@
+@import "colors.scss";
+
+@media (min-width: 900px) {
+  .main-activity {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: $secondary;
+    color: white;
+    margin: 70px 200px;
+    border-radius: 25px;
+
+    box-shadow: -10px 0px 10px -5px rgba(0, 0, 0, 0.75),
+      10px 0px 10px -5px rgba(0, 0, 0, 0.75),
+      10px 0px 10px -5px rgba(0, 0, 0, 0.75),
+      10px 0px 10px -5px rgba(0, 0, 0, 0.75);
+
+    .activity {
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+
+      .image {
+        // overflow: hidden;
+        margin: 0px -220px;
+      }
+
+      .activity-content {
+        margin: 35px 15px;
+        padding: 20px 180px;
+
+        > ul > li {
+          line-height: 30px;
+        }
+      }
+
+      .award {
+        .award-title {
+          width: 100%;
+          background-color: white;
+          color: $secondary;
+          margin-top: 100px;
+          box-shadow: -10px 0px 10px -5px rgba(0, 0, 0, 0.75),
+            10px 0px 10px -5px rgba(255, 255, 255, 0.12),
+            10px 0px 10px -5px rgba(252, 252, 252, 0.185),
+            10px 0px 10px -5px rgba(255, 250, 250, 0.175);
+
+          > h1 {
+            padding: 20px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .main-activity {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    .activity-title > h1 {
+      margin: 10px;
+      text-align: center;
+    }
+    .activity {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .image {
+        padding: 20px;
+        padding-bottom: 0px;
+        // overflow: hidden;
+      }
+      > img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .activity-content {
+        background-color: $secondary;
+        color: white;
+        box-shadow: -10px 0px 10px -5px rgba(0, 0, 0, 0.75),
+          10px 0px 10px -5px rgba(0, 0, 0, 0.75),
+          10px 0px 10px -5px rgba(0, 0, 0, 0.75),
+          10px 0px 10px -5px rgba(0, 0, 0, 0.75);
+
+        padding: 10px 75px;
+        margin: 10px;
+        margin-top: 0px;
+
+        > ul > li {
+          line-height: 30px;
+        }
+
+        .award {
+          .award-title {
+            width: 100%;
+            background-color: white;
+            color: $secondary;
+            margin-top: 100px;
+            box-shadow: -10px 0px 10px -5px rgba(0, 0, 0, 0.75),
+              10px 0px 10px -5px rgba(255, 255, 255, 0.12),
+              10px 0px 10px -5px rgba(252, 252, 252, 0.185),
+              10px 0px 10px -5px rgba(255, 250, 250, 0.175);
+
+            > h1 {
+              padding: 20px;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}

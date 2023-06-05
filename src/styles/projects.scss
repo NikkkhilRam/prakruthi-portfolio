@@ -1,0 +1,95 @@
+@import "colors.scss";
+
+@media (min-width: 900px) {
+  .project {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .project-title h1 {
+      letter-spacing: 2px;
+      padding: 20px;
+    }
+
+    .project-cards {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .project-1 {
+        box-shadow: -10px 0px 10px -5px rgba(0, 0, 0, 0.75),
+          0px -10px 10px -5px rgba(0, 0, 0, 0.75),
+          0px 10px 10px -5px rgba(0, 0, 0, 0.75);
+        align-items: center;
+        padding: 30px;
+        width: 28%;
+      }
+      .project-2 {
+        box-shadow: -10px 0px 10px -5px rgba(0, 0, 0, 0.75),
+          10px 0px 10px -5px rgba(0, 0, 0, 0.75),
+          0px -10px 10px -5px rgba(0, 0, 0, 0.75),
+          0px 10px 10px -5px rgba(0, 0, 0, 0.75);
+        padding: 40px;
+
+        width: 38%;
+      }
+      .project-3 {
+        box-shadow: 10px 0px 10px -5px rgba(0, 0, 0, 0.75),
+          0px -10px 10px -5px rgba(0, 0, 0, 0.75),
+          0px 10px 10px -5px rgba(0, 0, 0, 0.75);
+        padding: 40px;
+
+        width: 28%;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .project {
+    margin: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .project-title h1 {
+      letter-spacing: 2px;
+      // padding: 20px;
+    }
+
+    .project-cards {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+
+      .project-1 {
+        box-shadow: -10px 0px 10px -5px rgba(0, 0, 0, 0.75),
+          0px -10px 10px -5px rgba(0, 0, 0, 0.75),
+          0px 10px 10px -5px rgba(0, 0, 0, 0.75);
+        align-items: center;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+      .project-2 {
+        box-shadow: -10px 0px 10px -5px rgba(0, 0, 0, 0.75),
+          10px 0px 10px -5px rgba(0, 0, 0, 0.75),
+          0px -10px 10px -5px rgba(0, 0, 0, 0.75),
+          0px 10px 10px -5px rgba(0, 0, 0, 0.75);
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+      .project-3 {
+        box-shadow: 10px 0px 10px -5px rgba(0, 0, 0, 0.75),
+          0px -10px 10px -5px rgba(0, 0, 0, 0.75),
+          0px 10px 10px -5px rgba(0, 0, 0, 0.75);
+        padding: 20px;
+      }
+    }
+  }
+}
